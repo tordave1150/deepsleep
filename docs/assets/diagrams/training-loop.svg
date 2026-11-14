@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 232" role="img" aria-labelledby="title desc">
+  <title id="title">PyTorch training loop</title>
+  <desc id="desc">The loop clears prior gradients, computes logits and loss, backpropagates, and updates parameters before processing the next batch.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#38516a"/>
+    </marker>
+  </defs>
+  <rect x="1" y="1" width="818" height="230" rx="16" fill="#f4f8fc" stroke="#b7cadb"/>
+  <text x="28" y="42" font-family="sans-serif" font-size="22" font-weight="700" fill="#14283c">Training loop per mini-batch</text>
+  <g fill="#e0edfa" stroke="#6d8cac">
+    <rect x="28" y="78" width="132" height="66" rx="9"/>
+    <rect x="185" y="78" width="132" height="66" rx="9"/>
+    <rect x="342" y="78" width="132" height="66" rx="9"/>
+    <rect x="499" y="78" width="132" height="66" rx="9"/>
+    <rect x="656" y="78" width="136" height="66" rx="9"/>
+  </g>
+  <g fill="#14283c" text-anchor="middle" font-family="sans-serif" font-size="16">
+    <text x="94" y="106">Clear gradients<tspan x="94" dy="22" font-size="13">zero_grad</tspan></text>
+    <text x="251" y="106">Forward pass<tspan x="251" dy="22" font-size="13">model(inputs)</tspan></text>
+    <text x="408" y="106">Compute loss<tspan x="408" dy="22" font-size="13">criterion</tspan></text>
+    <text x="565" y="106">Backpropagate<tspan x="565" dy="22" font-size="13">loss.backward</tspan></text>
+    <text x="724" y="106">Update weights<tspan x="724" dy="22" font-size="13">optimizer.step</tspan></text>
+  </g>
+  <g fill="none" stroke="#38516a" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M163 111H181"/>
+    <path d="M320 111H338"/>
+    <path d="M477 111H495"/>
+    <path d="M634 111H652"/>
+    <path d="M724 149V173Q724 184 713 184H105Q94 184 94 173V150"/>
+  </g>
+  <text x="410" y="207" text-anchor="middle" fill="#38516a" font-family="sans-serif" font-size="14">Next mini-batch</text>
+</svg>
